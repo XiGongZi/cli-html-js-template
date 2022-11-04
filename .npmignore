@@ -1,0 +1,8 @@
+/src/
+/example/
+.env
+.env.production
+.env.test
+/node_modules/
+
+.parcel-cache

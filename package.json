@@ -1,0 +1,36 @@
+{
+  "name": "html-js-template",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "publish": "npm run build && npm publish",
+    "dev": "parcel ./example/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel src -D --out-dir dist && shx cp .env.production ./dist/.env",
+    "buildTest": "rimraf dist && babel src -D --out-dir dist && shx cp .env.test ./dist/.env"
+  },
+  "author": "wangancheng",
+  "homepage": "http://192.168.128.202:9001/rflight/common/frontend/easy-cli/html-js-template",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "nodemon": "^2.0.3",
+    "parcel": "^2.7.0",
+    "rimraf": "^2.6.3",
+    "shx": "^0.3.2"
+  },
+  "keywords": [
+    "js-module",
+    "template"
+  ],
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.5.1"
+  }
+}
