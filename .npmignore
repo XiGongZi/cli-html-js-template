@@ -4,5 +4,5 @@
 .env.production
 .env.test
 /node_modules/
-
-.parcel-cache
+/output/
+/.parcel-cache/
