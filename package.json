@@ -1,12 +1,12 @@
 {
   "name": "html-js-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "publish": "npm run build && npm publish",
     "dev": "parcel ./example/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test",
     "build": "rimraf dist && webpack",
     "buildTest": "rimraf dist && babel src -D --out-dir dist && shx cp .env.test ./dist/.env"
   },
@@ -24,6 +24,8 @@
     "@babel/runtime": "^7.20.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^7.1.2",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.3",
     "parcel": "^2.7.0",
     "rimraf": "^2.6.3",
     "shx": "^0.3.2",
