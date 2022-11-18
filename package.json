@@ -6,7 +6,7 @@
   "scripts": {
     "publish": "npm run build && npm publish",
     "dev": "parcel ./example/index.html",
-    "test": "mocha test",
+    "test": "npm run build && mocha test",
     "build": "rimraf dist && webpack",
     "buildTest": "rimraf dist && babel src -D --out-dir dist && shx cp .env.test ./dist/.env"
   },
