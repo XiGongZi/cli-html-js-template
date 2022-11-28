@@ -25,7 +25,6 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^7.1.2",
     "mocha": "^10.1.0",
-    "nodemon": "^2.0.3",
     "parcel": "^2.7.0",
     "rimraf": "^2.6.3",
     "shx": "^0.3.2",
