@@ -1,8 +1,0 @@
-/src/
-/example/
-.env
-.env.production
-.env.test
-/node_modules/
-/output/
-/.parcel-cache/
