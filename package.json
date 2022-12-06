@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "publish": "npm run build && npm publish",
+    "patch": "npm version patch && npm run publish",
     "dev": "parcel ./example/index.html",
     "test": "npm run build && mocha test",
     "build": "rimraf dist && webpack",
