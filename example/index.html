@@ -7,11 +7,45 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="index.css" /> -->
   </head>
-
+  <style>
+    button {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      background-color: #6c75cf;
+    }
+    button:hover {
+      background-color: #4d54a7;
+    }
+    input[type="file"] {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      background: rgba(108, 117, 207, 0.2);
+    }
+  </style>
   <body>
-    hello world
+    <div id="app">
+      {{message}}
+      <button>hello</button>
+      <input type="file" />
+      file
+    </div>
   </body>
   <script type="module">
-    import  { test } from "../src/index.js"
+    import selfMoudle from "../src/index.js";
+    import Vue from "./vue.js";
+    new Vue({
+      el: "#app",
+      data() {
+        return {
+          message: "Hello Vue!",
+        };
+      },
+    });
   </script>
 </html>

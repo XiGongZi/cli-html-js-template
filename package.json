@@ -16,7 +16,6 @@
   "author": "wangancheng",
   "homepage": "http://192.168.128.202:9001/rflight/common/frontend/easy-cli/html-js-template",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
