@@ -6,10 +6,11 @@
   "scripts": {
     "publish": "npm run build && npm publish",
     "patch": "npm version patch && npm run build && npm publish",
-    "dev": "parcel ./example/index.html",
-    "test": " mocha",
+    "dev": "npm run clearParcel && parcel ./example/index.html --port 9000",
+    "clearParcel": "rimraf dist && rimraf .parcel-cache",
+    "test": "mocha",
     "testBuild": "npm run build && mocha",
-    "updaterf": "node ./update.rfmodule.js",
+    "urf": "node ./update.rfmodule.js",
     "build": "rimraf dist && webpack",
     "buildTest": "rimraf dist && babel src -D --out-dir dist && shx cp .env.test ./dist/.env"
   },
