@@ -1,0 +1,32 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es2022: true,
+    node: true,
+  },
+  extends: ["eslint:recommended"],
+  rules: {
+    "linebreak-style": "off",
+    "no-console": "off",
+    "no-debugger": "off",
+    "vue/no-v-html": "off",
+    "no-var": 0,
+    "arrow-parens": "off",
+    "generator-star-spacing": "off",
+    semi: ["error", "always"],
+    indent: "off",
+    eqeqeq: 2,
+    strict: 2,
+    "space-before-function-paren": "off",
+    "new-cap": "off",
+    "eol-last": "off",
+    "no-multiple-empty-lines": [1, { max: 2 }],
+    camelcase: "off",
+    "no-useless-escape": "off",
+  },
+  parserOptions: {
+    ecmaVersion: 13,
+    parser: "babel-eslint",
+  },
+};
